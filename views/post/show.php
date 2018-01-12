@@ -6,8 +6,8 @@
  * Time: 15:54
  */
 ?>
-<h1>Test</h1>
-<h1>Test</h1>
-<h1>Test</h1>
-<h1>Test</h1>
+<h1>Show</h1>
+
+<button class="btn btn-success">Click</button>
+<?php $this->registerJsFile('@web/js/myjs.js',['depends' => 'yii\web\YiiAsset']) ?>
 
