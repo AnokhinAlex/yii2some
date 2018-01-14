@@ -12,6 +12,13 @@ use yii\bootstrap\Html;
 //    var_dump($model);
 ?>
 <h1>Test</h1>
+<?php if(Yii::$app->session->hasFlash('success')): ?>
+	<?php echo Yii::$app->session->getFlash('success') ?>
+<?php endif; ?>
+
+<?php if(Yii::$app->session->hasFlash('error')): ?>
+	<?php echo Yii::$app->session->getFlash('error') ?>
+<?php endif; ?>
 
 <?php $form = ActiveForm::begin() ?>
     <?php echo $form->field($model, 'name')->label('Имя') ?>
